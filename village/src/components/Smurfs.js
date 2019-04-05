@@ -5,9 +5,9 @@ import Smurf from './Smurf';
 class Smurfs extends Component {
   render() {
     return (
-      <div className="Smurfs">
-        <h1>Smurf Village</h1>
-        <ul>
+      <div className="Smurfs ui">
+        <h1 className="ui header">Smurf Village</h1>
+        <ul className="ui segment">
           {this.props.smurfs.map(smurf => {
             return (
               <Smurf
@@ -16,6 +16,7 @@ class Smurfs extends Component {
                 age={smurf.age}
                 height={smurf.height}
                 key={smurf.id}
+                delSmurf={this.props.delSmurf}
               />
             );
           })}
