@@ -38,7 +38,7 @@ class SmurfForm extends Component {
 
   render() {
     return (
-      <div className="ui segment">
+      <div className="ui container">
         <div className="SmurfForm ui form">
           <form onSubmit={this.addSmurf}>
             <input
@@ -59,7 +59,7 @@ class SmurfForm extends Component {
               value={this.state.height}
               name="height"
             />
-            <button className="ui primary button" type="submit">Add to the village</button>
+            <button className="ui primary button" type="submit" style={{margin:'5px'}}>Add to the village</button>
           </form>
         </div>
       </div>
