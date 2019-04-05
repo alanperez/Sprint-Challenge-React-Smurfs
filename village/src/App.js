@@ -49,7 +49,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="ui container">
+      <div className="ui container" >
         <div className="App">
         <div className="ui secondary pointing menu">
           <NavLink to="/" className="active item">Home</NavLink>
